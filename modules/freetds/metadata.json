@@ -1,0 +1,28 @@
+{
+  "name": "ceh-freetds",
+  "version": "1.0.0",
+  "author": "entre for Ecology & Hydrology",
+  "summary": "Puppet module for managing freetds",
+  "license": "GPL-2.0\"",
+  "source": "git://github.com/NERC-CEH/puppet-freetds.git",
+  "project_page": "https://forge.puppetlabs.com/ceh/freetds",
+  "issues_url": "https://github.com/NERC-CEH/puppet-freetds/issues",
+  "tags": [
+    "SQL Server",
+    "Database",
+    "FreeTDS"
+  ],
+  "operatingsystem_support": [
+    {
+      "operatingsystem": "Ubuntu",
+      "operatingsystemrelease": [
+        "12.04",
+        "14.04"
+      ]
+    }
+  ],
+  "description": "Module for freetds installation and database setup",
+  "dependencies": [
+    {"name":"puppetlabs/inifile","version_requirement":">= 1.1.0"}
+  ]
+}

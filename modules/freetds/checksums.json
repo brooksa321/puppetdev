@@ -1,0 +1,14 @@
+{
+  "Gemfile": "6a7ccd1bfe7b4448237122a13f2b3b76",
+  "Gemfile.lock": "d5e3c51d0db2b05b424a55946f8a88b1",
+  "LICENSE": "7adf1120bcc980876ff2f92628352f45",
+  "Modulefile": "ddb81c229c016516651cf157a18528d3",
+  "README.markdown": "d5941aff27716b9d673f31b612297c88",
+  "Rakefile": "f5ecd3b26e001defd6aa6f42d8360c13",
+  "manifests/db.pp": "dbe692c46281939954c02245c852c52d",
+  "manifests/init.pp": "50dfe5ab731473d70fe93e0d139e61aa",
+  "metadata.json": "fee293f8b527338c8d83ce8770ed67f5",
+  "spec/classes/freetds_spec.rb": "30cdb2fe037872f1d708f606011b42b5",
+  "spec/defines/db_spec.rb": "7ce70837b9a4fe98683145969b26f3ce",
+  "spec/spec_helper.rb": "31443cbb31de764aac79186cbc17689f"
+}
