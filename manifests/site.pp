@@ -30,3 +30,7 @@ node default {
   #   class { 'my_class': }
 }
 
+node "centos7.stakfoundry.com" {
+	include base
+}
+
