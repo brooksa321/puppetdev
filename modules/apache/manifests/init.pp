@@ -55,7 +55,7 @@ class apache {
       mode   => '0644',
    } -> #and then
 
-   file { '/usr3/logs/apache/logs':
+   file { '/usr3/logs/apache':
       ensure  => 'directory',
       owner   => 'root',
       group   => 'root',
