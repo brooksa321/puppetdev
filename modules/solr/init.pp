@@ -6,7 +6,7 @@ class solr {
    puppi::netinstall{ "solr":
       url                 => 'http://archive.apache.org/dist/lucene/solr/5.4.1/solr-5.4.1.zip',
 	   destination_dir     => '/usr1',
-      postextract_command => 'mv /usr1/solr-5.4.0 /usr1/solr',
+      postextract_command => 'mv /usr1/solr-5.4.0 /usr1/solr && /usr1/solr/bin/install_solr_service.sh',
    } -> #and then
    
    #Set solr to start on boot
