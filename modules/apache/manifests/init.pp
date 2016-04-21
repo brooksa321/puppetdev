@@ -55,11 +55,19 @@ class apache {
       mode   => '0644',
    } -> #and then
 
+   file { '/usr3/logs/apache/logs':
+      ensure  => 'directory',
+      owner   => 'root',
+      group   => 'root',
+      mode    => '0644',
+      require => File[$server_dirs],
+    }
+
    #Symlink logs to /usr3
    file {'/usr3/logs/apache/logs':
      ensure  => symlink,
      target  => '/usr1/apache/logs',
-     require => File[$server_dirs],
+     require => File['/usr3/logs/apache/logs'],
    } -> #and then
 
    #Restarts httpd on changes in config file
