@@ -5,9 +5,7 @@ class base {
 	}
 
 	#Setup Directory Structure
-	$server_dirs = [ '/usr1', '/usr2', '/usr3', '/usr4'
-					'/usr4/logs', '/usr4/logs/apache',
-                      '/usr4/logs/solr']
+	$server_dirs = [ '/usr1', '/usr2', '/usr3', '/usr4']
 
 	file { $server_dirs:
       ensure  => 'directory',

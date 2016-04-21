@@ -44,6 +44,13 @@ class apache {
       timeout => 600 ,
    } -> #and then
 
+   file { '/usr3/logs/apache':
+      ensure  => 'directory',
+      owner   => 'root',
+      group   => 'root',
+      mode    => '0644',
+    } -> #and then
+
    #Replace Default httpd.conf
    file { '/usr1/apache/conf/httpd.conf':
       ensure => present,
@@ -55,8 +62,8 @@ class apache {
 
    #Symlink logs to /usr3
    file {'/usr3/logs/apache/logs':
-     ensure => symlink,
-     target => '/usr1/apache/logs',
+     ensure  => symlink,
+     target  => '/usr1/apache/logs',
    } -> #and then
 
    #Restarts httpd on changes in config file
