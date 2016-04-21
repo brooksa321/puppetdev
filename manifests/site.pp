@@ -33,5 +33,6 @@ node default {
 node "centos7.stakfoundry.com" {
 	include base
 	include apache
+	include solr
 }
 
