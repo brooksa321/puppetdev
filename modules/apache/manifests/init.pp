@@ -67,7 +67,7 @@ class apache {
    file {'/usr3/logs/apache/logs':
      ensure  => symlink,
      target  => '/usr1/apache/logs',
-     require => File['/usr3/logs/apache/logs'],
+     require => File['/usr3/logs/apache'],
    } -> #and then
 
    #Restarts httpd on changes in config file
