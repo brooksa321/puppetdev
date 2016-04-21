@@ -76,4 +76,11 @@ class apache {
       subscribe   => File["/usr1/apache/conf/httpd.conf"],
       refreshonly => true,
    }
+
+   service { 'httpd':
+      ensure   => 'running',
+      start    => '/usr1/apache/bin/httpd -k start',
+      restart  => '/usr1/apache/bin/httpd -k restart',
+      stop     => '/usr1/apache/bin/httpd -k stop',
+   }
 }
