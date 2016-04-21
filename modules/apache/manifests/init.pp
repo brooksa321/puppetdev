@@ -49,7 +49,7 @@ class apache {
    #Replace Default httpd.conf
    file { '/usr1/apache/conf/httpd.conf':
       ensure => present,
-      source => 'puppet:///modules/demo/httpd.conf',
+      source => 'puppet:///modules/apache/httpd.conf',
       owner  => root,
       group  => root,
       mode   => '0644',
