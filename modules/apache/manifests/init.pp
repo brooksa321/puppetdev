@@ -61,7 +61,7 @@ class apache {
       group   => 'root',
       mode    => '0644',
       require => File[$server_dirs],
-    }
+    } -> #and then
 
    #Symlink logs to /usr3
    file {'/usr3/logs/apache/logs':
@@ -75,7 +75,7 @@ class apache {
       command     => "/usr1/apache/bin/httpd -k restart",
       subscribe   => File["/usr1/apache/conf/httpd.conf"],
       refreshonly => true,
-   }
+   } -> #and then
 
    service { 'httpd':
       ensure   => 'running',
